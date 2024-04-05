@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+*{
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0; left: 0;right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1%;
+    z-index: 1000;
+    background-color: #124d6a;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+header .navbar .logo{
+    color: white;
+    font-size: 2rem;
+    font-weight:bolder;
+    text-decoration: none;
+
+}
+header .navbar a{
+    font-size:1.8rem;
+    border-radius:0.5rem;
+    padding:0 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    
+   
+}
+
+
+header .navbar a.active,
+header .navbar a:hover{
+    color:aqua;
+   
+}
+header .icon a{
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 0  0.8rem;
+    color: #fff;
+    text-decoration: none;
+    line-height: 0.5rem;
+    height: 4.5rem;
+
+}
+header .icon a:hover{
+    color: aqua;
+    
+}
+form #search-b{
+    position: fixed;
+    top:-110%;
+    width: 100%;
+    height:65px;
+    margin-top: 5rem;
+}
+.main{
+    width: 100%;
+    background: url(13.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+   
+}
+.search{
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+padding-top:200px;
+flex-wrap: wrap;
+}
+.search #p1{
+    font-size: 49px;
+    
+}
+.search #p2{
+    font-size: 28px;
+    
+}
+.input-group {
+    position: relative;
+    display: flex;
+    width: 750px;
+    height: 70px;
+    font-size: 20px;
+    top: 25px;
+}
+
+.search-input {
+    flex: 1; /* لجعل الإدخال يأخذ المساحة المتاحة ما عدا مساحة الزر */
+    border: 1px solid #ccc; /* تصميم لحد الإدخال */
+    padding: 5px 10px; /* تحديد المسافة الداخلية */
+    border-radius: 5px 0 0 5px; /* تحديد الحواف الإستدارة */
+}
+
+.search-btn {
+    background:#124d6a; /* لون الخلفية للزر */
+    border: 1px solid #ccc; /* تصميم لحد الزر */
+    padding: 5px 10px; /* تحديد المسافة الداخلية */
+    border-radius: 0 5px 5px 0; /* تحديد الحواف الإستدارة */
+    cursor: pointer; /* لتغيير شكل المؤشر عند المرور فوق الزر */
+    color: #fff;
+    font-size: 20px;
+}
+
+.search-btn:focus,
+.search-input:focus {
+    outline: none; /* لإزالة الخط الخارجي عند التركيز على العناصر */
+}
+#btn5{
+    position: relative;
+    padding:10px 20px;
+    font-size: 13px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: #fff;
+    top:130px;
+    
+}
+#btn5:hover{
+    background-color: #fff;
+    color: #124d6a;
+}
+
+
+@media screen and (min-width: 768px) {
+    .home-text {    
+      grid-template-columns: 40% 60%;
+      gap: 0;
+    }
+    .home-img {
+      padding: 0 6rem 0 2rem;
+    }
+    .home-img img {
+      max-width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:992px){
+header{
+    display: none;
+}
+}
+@media (max-width:698px){
+.main #p1{
+    font-size: 30px;
+}
+@media (max-width:698px){
+    .main #p2{
+        font-size: 15px;
+    }
+}}
+@media (max-width:427px){
+    .main #p1{
+        font-size: 25px;
+    }
+}
+    @media (max-width:427px){
+        .main #p2{
+            font-size: 12.5px;
+        }
+    }
+@media (max-width:427px){
+    .search-input{
+        width: 50px;
+
+    }
+        }
+    
